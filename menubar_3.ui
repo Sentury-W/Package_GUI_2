@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1073</width>
+    <height>786</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,3,0,7,0">
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>原始数据</string>
+         </attribute>
+         <widget class="QTableView" name="tableView">
+          <property name="geometry">
+           <rect>
+            <x>5</x>
+            <y>11</y>
+            <width>261</width>
+            <height>671</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>恢复数据</string>
+         </attribute>
+         <widget class="QTableView" name="tableView_2">
+          <property name="geometry">
+           <rect>
+            <x>5</x>
+            <y>11</y>
+            <width>261</width>
+            <height>671</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="10,1,10">
+        <item>
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_3">
+           <attribute name="title">
+            <string>原数据图像</string>
+           </attribute>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>14</y>
+              <width>611</width>
+              <height>271</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:1px solid;</string>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_4">
+           <attribute name="title">
+            <string>异常检测结果</string>
+           </attribute>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>14</y>
+              <width>611</width>
+              <height>271</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:1px solid;</string>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>188</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="tabWidget_3">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_5">
+           <attribute name="title">
+            <string>插值恢复</string>
+           </attribute>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>14</y>
+              <width>611</width>
+              <height>271</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:1px solid;</string>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>LSTM</string>
+           </attribute>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>11</x>
+              <y>14</y>
+              <width>611</width>
+              <height>271</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:1px solid;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1073</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>功能</string>
+    </property>
+    <widget class="QMenu" name="menuInput_Data_2">
+     <property name="title">
+      <string>Input Data</string>
+     </property>
+     <widget class="QMenu" name="menuCHINA">
+      <property name="title">
+       <string>CHINA</string>
+      </property>
+      <addaction name="actionSLS01_2"/>
+      <addaction name="actionSLS02_2"/>
+      <addaction name="actionSLS03_3"/>
+      <addaction name="actionSLS04_2"/>
+      <addaction name="actionSLS05_2"/>
+      <addaction name="actionSLS06_2"/>
+      <addaction name="actionSLS07_2"/>
+      <addaction name="actionSLS08_2"/>
+      <addaction name="actionSLS09_2"/>
+      <addaction name="actionSLS10_2"/>
+      <addaction name="actionSLS11_2"/>
+      <addaction name="actionSLS12_2"/>
+      <addaction name="actionSLS13_2"/>
+      <addaction name="actionSLS14_2"/>
+      <addaction name="actionSLS15_2"/>
+      <addaction name="actionSLS16_2"/>
+      <addaction name="actionSLS17_2"/>
+      <addaction name="actionSLS18_2"/>
+      <addaction name="actionSLS19_2"/>
+      <addaction name="actionSLS20_2"/>
+      <addaction name="actionSLS21_2"/>
+      <addaction name="actionSLS22_2"/>
+      <addaction name="actionSLS23_2"/>
+      <addaction name="actionSLS24_2"/>
+     </widget>
+     <widget class="QMenu" name="menuRUSSIA">
+      <property name="title">
+       <string>RUSSIA</string>
+      </property>
+      <addaction name="actionSLX01_2"/>
+      <addaction name="actionSLX02_2"/>
+      <addaction name="actionSLX03_2"/>
+      <addaction name="actionSLX04_2"/>
+      <addaction name="actionSLX05_2"/>
+      <addaction name="actionSLX06_2"/>
+      <addaction name="actionSLX07_2"/>
+      <addaction name="actionSLX08_2"/>
+      <addaction name="actionSLX09_2"/>
+      <addaction name="actionSLX10_2"/>
+      <addaction name="actionSLX11_2"/>
+      <addaction name="actionSLX12_2"/>
+      <addaction name="actionSLX13_2"/>
+      <addaction name="actionSLX14_2"/>
+      <addaction name="actionSLX15_2"/>
+      <addaction name="actionSLX16_2"/>
+      <addaction name="actionSLX17_2"/>
+      <addaction name="actionSLX18_2"/>
+      <addaction name="actionSLX19_2"/>
+      <addaction name="actionSLX20_2"/>
+      <addaction name="actionSLX21_2"/>
+      <addaction name="actionSLX22_2"/>
+      <addaction name="actionSLX23_2"/>
+      <addaction name="actionSLX24_2"/>
+     </widget>
+     <addaction name="menuCHINA"/>
+     <addaction name="menuRUSSIA"/>
+    </widget>
+    <addaction name="actionLoad_Data"/>
+    <addaction name="separator"/>
+    <addaction name="menuInput_Data_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>异常检测</string>
+    </property>
+    <addaction name="actionJY_error"/>
+    <addaction name="action3sigma"/>
+    <addaction name="actionbox_plot"/>
+    <addaction name="actioniso_for"/>
+    <addaction name="actionk_means"/>
+    <addaction name="actionSVM"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>异常分类</string>
+    </property>
+    <addaction name="actionCNN"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>异常恢复</string>
+    </property>
+    <addaction name="actionInsert"/>
+    <addaction name="actionLSTM"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>数据显示</string>
+    </property>
+    <addaction name="actionOriginal_Data_2"/>
+    <addaction name="actionDetected_Data"/>
+    <addaction name="actionReatored_Data"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>数据保存</string>
+    </property>
+    <addaction name="action1D_data"/>
+    <addaction name="action2D_Figure"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action3sigma">
+   <property name="text">
+    <string>3-sigma</string>
+   </property>
+  </action>
+  <action name="actionJY_error">
+   <property name="text">
+    <string>JY_error</string>
+   </property>
+  </action>
+  <action name="actionbox_plot">
+   <property name="text">
+    <string>box_plot</string>
+   </property>
+  </action>
+  <action name="actioniso_for">
+   <property name="text">
+    <string>iostation_forest</string>
+   </property>
+  </action>
+  <action name="actionCNN">
+   <property name="text">
+    <string>CNN</string>
+   </property>
+  </action>
+  <action name="actionInsert">
+   <property name="text">
+    <string>Insert</string>
+   </property>
+  </action>
+  <action name="actionLSTM">
+   <property name="text">
+    <string>LSTM</string>
+   </property>
+  </action>
+  <action name="actionReatored_Data">
+   <property name="text">
+    <string>Restored Data</string>
+   </property>
+  </action>
+  <action name="action1D_data">
+   <property name="text">
+    <string>1D_data</string>
+   </property>
+  </action>
+  <action name="action2D_Figure">
+   <property name="text">
+    <string>2D_Figure</string>
+   </property>
+  </action>
+  <action name="actionFeb">
+   <property name="text">
+    <string>Feb</string>
+   </property>
+  </action>
+  <action name="actionMar">
+   <property name="text">
+    <string>Mar</string>
+   </property>
+  </action>
+  <action name="actionApr">
+   <property name="text">
+    <string>Apr</string>
+   </property>
+  </action>
+  <action name="actionMay">
+   <property name="text">
+    <string>May</string>
+   </property>
+  </action>
+  <action name="actionJune">
+   <property name="text">
+    <string>June</string>
+   </property>
+  </action>
+  <action name="actionJuly">
+   <property name="text">
+    <string>July</string>
+   </property>
+  </action>
+  <action name="actionAug">
+   <property name="text">
+    <string>Aug</string>
+   </property>
+  </action>
+  <action name="actionep">
+   <property name="text">
+    <string>Sep</string>
+   </property>
+  </action>
+  <action name="actionOct">
+   <property name="text">
+    <string>Oct</string>
+   </property>
+  </action>
+  <action name="actionNov">
+   <property name="text">
+    <string>Nov</string>
+   </property>
+  </action>
+  <action name="actionDec">
+   <property name="text">
+    <string>Dec</string>
+   </property>
+  </action>
+  <action name="actionCHINA">
+   <property name="text">
+    <string>CHINA</string>
+   </property>
+  </action>
+  <action name="actionRUSS">
+   <property name="text">
+    <string>RUSS</string>
+   </property>
+  </action>
+  <action name="actionSLS03">
+   <property name="text">
+    <string>SLS03</string>
+   </property>
+  </action>
+  <action name="actionOriginal_Data_2">
+   <property name="text">
+    <string>Original Data</string>
+   </property>
+  </action>
+  <action name="actionSLS01_3">
+   <property name="text">
+    <string>SLS01</string>
+   </property>
+  </action>
+  <action name="actionSLS02">
+   <property name="text">
+    <string>SLS02</string>
+   </property>
+  </action>
+  <action name="actionSLS03_2">
+   <property name="text">
+    <string>SLS03</string>
+   </property>
+  </action>
+  <action name="actionSLS04">
+   <property name="text">
+    <string>SLS04</string>
+   </property>
+  </action>
+  <action name="actionSLS05">
+   <property name="text">
+    <string>SLS05</string>
+   </property>
+  </action>
+  <action name="actionSLS06">
+   <property name="text">
+    <string>SLS06</string>
+   </property>
+  </action>
+  <action name="actionSLS07">
+   <property name="text">
+    <string>SLS07</string>
+   </property>
+  </action>
+  <action name="actionSLS08">
+   <property name="text">
+    <string>SLS08</string>
+   </property>
+  </action>
+  <action name="actionSLS09">
+   <property name="text">
+    <string>SLS09</string>
+   </property>
+  </action>
+  <action name="actionSLS10">
+   <property name="text">
+    <string>SLS10</string>
+   </property>
+  </action>
+  <action name="actionSLS11">
+   <property name="text">
+    <string>SLS11</string>
+   </property>
+  </action>
+  <action name="actionSLS12">
+   <property name="text">
+    <string>SLS12</string>
+   </property>
+  </action>
+  <action name="actionSLS13">
+   <property name="text">
+    <string>SLS13</string>
+   </property>
+  </action>
+  <action name="actionSLS14">
+   <property name="text">
+    <string>SLS14</string>
+   </property>
+  </action>
+  <action name="actionSLS15">
+   <property name="text">
+    <string>SLS15</string>
+   </property>
+  </action>
+  <action name="actionSLS16">
+   <property name="text">
+    <string>SLS16</string>
+   </property>
+  </action>
+  <action name="actionSLS17">
+   <property name="text">
+    <string>SLS17</string>
+   </property>
+  </action>
+  <action name="actionSLS18">
+   <property name="text">
+    <string>SLS18</string>
+   </property>
+  </action>
+  <action name="actionSLS19">
+   <property name="text">
+    <string>SLS19</string>
+   </property>
+  </action>
+  <action name="actionSLS20">
+   <property name="text">
+    <string>SLS20</string>
+   </property>
+  </action>
+  <action name="actionSLS21">
+   <property name="text">
+    <string>SLS21</string>
+   </property>
+  </action>
+  <action name="actionSLS22">
+   <property name="text">
+    <string>SLS22</string>
+   </property>
+  </action>
+  <action name="actionSLS23">
+   <property name="text">
+    <string>SLS23</string>
+   </property>
+  </action>
+  <action name="actionSLS24">
+   <property name="text">
+    <string>SLS24</string>
+   </property>
+  </action>
+  <action name="actionSLX01">
+   <property name="text">
+    <string>SLX01</string>
+   </property>
+  </action>
+  <action name="actionSLX02">
+   <property name="text">
+    <string>SLX02</string>
+   </property>
+  </action>
+  <action name="actionSLX03">
+   <property name="text">
+    <string>SLX03</string>
+   </property>
+  </action>
+  <action name="actionSLX04">
+   <property name="text">
+    <string>SLX04</string>
+   </property>
+  </action>
+  <action name="actionSLX05">
+   <property name="text">
+    <string>SLX05</string>
+   </property>
+  </action>
+  <action name="actionSLX06">
+   <property name="text">
+    <string>SLX06</string>
+   </property>
+  </action>
+  <action name="actionSLX07">
+   <property name="text">
+    <string>SLX07</string>
+   </property>
+  </action>
+  <action name="actionSLX08">
+   <property name="text">
+    <string>SLX08</string>
+   </property>
+  </action>
+  <action name="actionSLX09">
+   <property name="text">
+    <string>SLX09</string>
+   </property>
+  </action>
+  <action name="actionSLX10">
+   <property name="text">
+    <string>SLX10</string>
+   </property>
+  </action>
+  <action name="actionSLX11">
+   <property name="text">
+    <string>SLX11</string>
+   </property>
+  </action>
+  <action name="actionSLX12">
+   <property name="text">
+    <string>SLX12</string>
+   </property>
+  </action>
+  <action name="actionSLX13">
+   <property name="text">
+    <string>SLX13</string>
+   </property>
+  </action>
+  <action name="actionSLX14">
+   <property name="text">
+    <string>SLX14</string>
+   </property>
+  </action>
+  <action name="actionSLX15">
+   <property name="text">
+    <string>SLX15</string>
+   </property>
+  </action>
+  <action name="actionSLX16">
+   <property name="text">
+    <string>SLX16</string>
+   </property>
+  </action>
+  <action name="actionSLX17">
+   <property name="text">
+    <string>SLX17</string>
+   </property>
+  </action>
+  <action name="actionSLX18">
+   <property name="text">
+    <string>SLX18</string>
+   </property>
+  </action>
+  <action name="actionSLX19">
+   <property name="text">
+    <string>SLX19</string>
+   </property>
+  </action>
+  <action name="actionSLX20">
+   <property name="text">
+    <string>SLX20</string>
+   </property>
+  </action>
+  <action name="actionSLX21">
+   <property name="text">
+    <string>SLX21</string>
+   </property>
+  </action>
+  <action name="actionSLX22">
+   <property name="text">
+    <string>SLX22</string>
+   </property>
+  </action>
+  <action name="actionSLX23">
+   <property name="text">
+    <string>SLX23</string>
+   </property>
+  </action>
+  <action name="actionSXL24">
+   <property name="text">
+    <string>SXL24</string>
+   </property>
+  </action>
+  <action name="actionSLS01">
+   <property name="text">
+    <string>SLS01</string>
+   </property>
+  </action>
+  <action name="actionLoad_Data">
+   <property name="text">
+    <string>Load Data</string>
+   </property>
+  </action>
+  <action name="actionSLS01_2">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>SLS01</string>
+   </property>
+  </action>
+  <action name="actionSLS02_2">
+   <property name="text">
+    <string>SLS02</string>
+   </property>
+  </action>
+  <action name="actionSLS03_3">
+   <property name="text">
+    <string>SLS03</string>
+   </property>
+  </action>
+  <action name="actionSLS04_2">
+   <property name="text">
+    <string>SLS04</string>
+   </property>
+  </action>
+  <action name="actionSLS05_2">
+   <property name="text">
+    <string>SLS05</string>
+   </property>
+  </action>
+  <action name="actionSLS06_2">
+   <property name="text">
+    <string>SLS06</string>
+   </property>
+  </action>
+  <action name="actionSLS07_2">
+   <property name="text">
+    <string>SLS07</string>
+   </property>
+  </action>
+  <action name="actionSLS08_2">
+   <property name="text">
+    <string>SLS08</string>
+   </property>
+  </action>
+  <action name="actionSLS09_2">
+   <property name="text">
+    <string>SLS09</string>
+   </property>
+  </action>
+  <action name="actionSLS10_2">
+   <property name="text">
+    <string>SLS10</string>
+   </property>
+  </action>
+  <action name="actionSLS11_2">
+   <property name="text">
+    <string>SLS11</string>
+   </property>
+  </action>
+  <action name="actionSLS12_2">
+   <property name="text">
+    <string>SLS12</string>
+   </property>
+  </action>
+  <action name="actionSLS13_2">
+   <property name="text">
+    <string>SLS13</string>
+   </property>
+  </action>
+  <action name="actionSLS14_2">
+   <property name="text">
+    <string>SLS14</string>
+   </property>
+  </action>
+  <action name="actionSLS15_2">
+   <property name="text">
+    <string>SLS15</string>
+   </property>
+  </action>
+  <action name="actionSLS16_2">
+   <property name="text">
+    <string>SLS16</string>
+   </property>
+  </action>
+  <action name="actionSLS17_2">
+   <property name="text">
+    <string>SLS17</string>
+   </property>
+  </action>
+  <action name="actionSLS18_2">
+   <property name="text">
+    <string>SLS18</string>
+   </property>
+  </action>
+  <action name="actionSLS19_2">
+   <property name="text">
+    <string>SLS19</string>
+   </property>
+  </action>
+  <action name="actionSLS20_2">
+   <property name="text">
+    <string>SLS20</string>
+   </property>
+  </action>
+  <action name="actionSLS21_2">
+   <property name="text">
+    <string>SLS21</string>
+   </property>
+  </action>
+  <action name="actionSLS22_2">
+   <property name="text">
+    <string>SLS22</string>
+   </property>
+  </action>
+  <action name="actionSLS23_2">
+   <property name="text">
+    <string>SLS23</string>
+   </property>
+  </action>
+  <action name="actionSLS24_2">
+   <property name="text">
+    <string>SLS24</string>
+   </property>
+  </action>
+  <action name="actionSLX01_2">
+   <property name="text">
+    <string>SLX01</string>
+   </property>
+  </action>
+  <action name="actionSLX02_2">
+   <property name="text">
+    <string>SLX02</string>
+   </property>
+  </action>
+  <action name="actionSLX03_2">
+   <property name="text">
+    <string>SLX03</string>
+   </property>
+  </action>
+  <action name="actionSLX04_2">
+   <property name="text">
+    <string>SLX04</string>
+   </property>
+  </action>
+  <action name="actionSLX05_2">
+   <property name="text">
+    <string>SLX05</string>
+   </property>
+  </action>
+  <action name="actionSLX06_2">
+   <property name="text">
+    <string>SLX06</string>
+   </property>
+  </action>
+  <action name="actionSLX07_2">
+   <property name="text">
+    <string>SLX07</string>
+   </property>
+  </action>
+  <action name="actionSLX08_2">
+   <property name="text">
+    <string>SLX08</string>
+   </property>
+  </action>
+  <action name="actionSLX09_2">
+   <property name="text">
+    <string>SLX09</string>
+   </property>
+  </action>
+  <action name="actionSLX10_2">
+   <property name="text">
+    <string>SLX10</string>
+   </property>
+  </action>
+  <action name="actionSLX11_2">
+   <property name="text">
+    <string>SLX11</string>
+   </property>
+  </action>
+  <action name="actionSLX12_2">
+   <property name="text">
+    <string>SLX12</string>
+   </property>
+  </action>
+  <action name="actionSLX13_2">
+   <property name="text">
+    <string>SLX13</string>
+   </property>
+  </action>
+  <action name="actionSLX14_2">
+   <property name="text">
+    <string>SLX14</string>
+   </property>
+  </action>
+  <action name="actionSLX15_2">
+   <property name="text">
+    <string>SLX15</string>
+   </property>
+  </action>
+  <action name="actionSLX16_2">
+   <property name="text">
+    <string>SLX16</string>
+   </property>
+  </action>
+  <action name="actionSLX17_2">
+   <property name="text">
+    <string>SLX17</string>
+   </property>
+  </action>
+  <action name="actionSLX18_2">
+   <property name="text">
+    <string>SLX18</string>
+   </property>
+  </action>
+  <action name="actionSLX19_2">
+   <property name="text">
+    <string>SLX19</string>
+   </property>
+  </action>
+  <action name="actionSLX20_2">
+   <property name="text">
+    <string>SLX20</string>
+   </property>
+  </action>
+  <action name="actionSLX21_2">
+   <property name="text">
+    <string>SLX21</string>
+   </property>
+  </action>
+  <action name="actionSLX22_2">
+   <property name="text">
+    <string>SLX22</string>
+   </property>
+  </action>
+  <action name="actionSLX23_2">
+   <property name="text">
+    <string>SLX23</string>
+   </property>
+  </action>
+  <action name="actionSLX24_2">
+   <property name="text">
+    <string>SLX24</string>
+   </property>
+  </action>
+  <action name="actionk_means">
+   <property name="text">
+    <string>k_means</string>
+   </property>
+  </action>
+  <action name="actionSVM">
+   <property name="text">
+    <string>SVM</string>
+   </property>
+  </action>
+  <action name="actionDetected_Data">
+   <property name="text">
+    <string>Detected Data</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
